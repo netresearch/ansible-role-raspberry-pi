@@ -1,0 +1,4 @@
+# file: roles/raspberry-pi/defaults/main.yml
+---
+#
+# foo: default

@@ -1,0 +1,4 @@
+# file: roles/raspberry-pi/vars/main.yml
+---
+#
+# foo: bar
