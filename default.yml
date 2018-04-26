@@ -1,0 +1,6 @@
+---
+- name: Basic setup for Raspberry Pis
+  hosts: localhost
+  roles:
+    - ansible-role-raspberry-pi
+ 

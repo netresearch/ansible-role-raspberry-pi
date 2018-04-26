@@ -1,0 +1,30 @@
+---
+# file: packages.yml
+
+- name: "Managing Software packages"
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+    install_recommends: no
+  with_items: "{{ packages.pi | default([]) }}"
+  register: packages_action
+  tags:
+    - packages
+
+# Checking for updates
+- name: "Updating the apt-cache"
+  tags: apt-update
+  apt:
+    update-cache: yes
+
+# Upgrading the distro packages
+- name: "Upgrading all packages"
+  tags: apt-upgrade
+  apt:
+    upgrade: dist
+
+# Removing all other unneeded packages
+- name: "Autoremoving unneeded packages"
+  tags: apt-autoclean
+  apt: 
+    autoremove: yes

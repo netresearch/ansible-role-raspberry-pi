@@ -1,0 +1,8 @@
+!files/
+!vars/
+!meta/
+!tasks/
+!.gitignore
+!README.md
+!default.yml
+!playbook.yml

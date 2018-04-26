@@ -1,0 +1,31 @@
+---
+galaxy_info:
+  author: TheDevMinerTV <tobigames200@gmail.com>
+  description: This Ansible role provides a base setup for the Raspberry Pis at Netresearch.
+  company: Netresearch DTT GmbH
+  license: BSD
+  min_ansible_version: 2.5
+  platforms:
+  - name: Debian
+    versions:
+    - jessie
+    - stretch
+    - buster
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+    - bionic
+  galaxy_tags: []
+dependencies:
+  - src: git+https://github.com/dev-sec/ansible-os-hardening.git
+    version: 5.1.0
+    name: os-hardening
+
+  - src: git+https://github.com/dev-sec/ansible-ssh-hardening.git
+    version: 6.0.0
+    name: ssh-hardening
+
+  - src: git+git@git.netresearch.de:provision/ansible-role-server-base.git
+    version: v1.5.1
+    name: server-base

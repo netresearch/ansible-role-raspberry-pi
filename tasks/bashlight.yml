@@ -1,0 +1,22 @@
+---
+- name: "Creating .bin directory for bashlight"
+  file:
+    path: "/home/{{ pi_user_name }}/.bin"
+    state: directory
+    group: "{{ pi_user_name }}"
+    owner: "{{ pi_user_group }}"
+
+- name: "Cloning bashlight"
+  git:
+    dest: "/home/{{ pi_user_name }}/.bin/bashlight"
+    repo: https://github.com/vergissberlin/bashlight.git
+
+
+- name: "Adding bashlight to bashrc"
+  blockinfile:
+    dest: "/home/{{ pi_user_name }}/.bashrc"
+    insertafter: EOF
+    block: |
+      if [ -f ~/.bin/bashlight/bashlight ]; then
+      . ~/.bin/bashlight/bashlight
+      fi

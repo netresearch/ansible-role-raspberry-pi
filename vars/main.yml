@@ -1,0 +1,31 @@
+---
+packages:
+  pi:
+    - name: 'galculator'
+      state: absent
+    - name: 'geany'
+      state: absent
+    - name: 'geany-common'
+      state: absent
+    - name: 'gpicview'
+      state: absent
+    - name: 'idle'
+      state: absent
+    - name: 'idle3'
+      state: absent
+    - name: 'idle-python2.7'
+      state: absent
+    - name: 'idle-python3.5'
+      state: absent
+    - name: 'minecraft-pi'
+      state: absent
+    - name: 'nuscratch'
+      state: absent
+    - name: 'omxplayer'
+      state: absent
+    - name: 'scratch'
+      state: absent
+    - name: 'vlc'
+      state: absent
+    - name: 'git'
+      state: present
