@@ -1,4 +1,50 @@
-# file: roles/raspberry-pi/defaults/main.yml
 ---
-#
-# foo: default
+packages:
+  os:
+    - name: bluej
+      state: absent
+    - name: chromium-browser
+      state: latest
+    - name: claws-mail*
+      state: absent
+    - name: geany
+      state: absent
+    - name: geany-common
+      state: absent
+    - name: greenfoot
+      state: absent
+    - name: idle
+      state: absent
+    - name: idle3
+      state: absent
+    - name: idle-python2.7
+      state: absent
+    - name: idle-python3.5
+      state: absent
+    - name: libreoffice*
+      state: absent
+    - name: minecraft-pi
+      state: absent
+    - name: node
+      state: absent
+    - name: nodejs
+      state: absent
+    - name: npm
+      state: absent
+    - name: python3-thonny
+      state: absent
+    - name: scratch*
+      state: absent
+    - name: sonic-pi
+      state: absent
+    - name: unclutter
+      state: latest
+    - name: wolfram-engine
+      state: absent
+    - name: vim
+      state: present
+    - name: wolfram-script
+      state: absent
+  node:
+    - name: pm2
+      state: present

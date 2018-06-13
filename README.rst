@@ -11,7 +11,7 @@ This Ansible role installs all requirements for IoT devices on a raspberry pi.
 **What does this role do?**
 
 - installs security roles
-- installs latest node version
+- installs latest nodejs and npm version
 
 Requirements
 ============

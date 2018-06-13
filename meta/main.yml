@@ -1,17 +1,14 @@
 # file: roles/raspberry-pi/meta/main.yml
 ---
 galaxy_info:
-  author: C. Ray Nagin
+  author: André Lademann
   license: MIT
   min_ansible_version: 1.4
   platforms:
-    - name: Ubuntu
+    - name: RASPBIAN
       versions:
-        - trusty
-        - saucy
-        - precise
-        - lucid
+        - stretch
   categories:
-     - web
+     - iot
 dependencies: []
-version: 0.0.0
+version: 0.0.1

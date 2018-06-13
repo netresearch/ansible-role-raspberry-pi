@@ -1,0 +1,90 @@
+[core]
+	excludesfile = /home/vagrant/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current
+[color "branch"]
+	current = yellow
+	local = cyan
+	remote = green
+[alias]
+	br = branch -av
+	ci = commit -a
+	co = checkout
+	di = diff
+	dump = cat-file -p
+	hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
+	sl = log --color --graph --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\" --abbrev-commit
+	st = status --ignore-submodules=all
+	type = cat-file -t
+	fush = push -f
+	prune = fetch origin --prune
+	tush = push --tags
+	up = git fetch origin && git rebase origin/master
+	amend = git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+	master = git checkout master
+	development = checkout development
+	staging = checkout staging
+	create-branch = git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1
+	delete-branch = git push origin :refs/heads/$1 && git branch -D $1
+	merge-branch = git checkout master && git merge @{-1}
+[branch]
+	autosetuprebase = always
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+	meta = yellow
+	frag = magenta
+	old = cyan
+	new = green
+[color]
+	grep = auto
+	interactive = auto
+[color "push"]
+	default = current
+[color "status"]
+	added = yellow
+	changed = yellow
+	added = green
+	added = green
+	added = green
+	added = green
+	added = green
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[remote "origin"]
+	tagopt = --tags
