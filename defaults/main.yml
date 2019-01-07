@@ -41,10 +41,9 @@ packages:
       state: latest
     - name: wolfram-engine
       state: absent
-    - name: vim
+    - name: nano
+      state: present
+    - vim:
       state: present
     - name: wolfram-script
       state: absent
-  node:
-    - name: pm2
-      state: present
