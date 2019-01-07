@@ -1,10 +1,11 @@
-# vagrant-devbox
+# ansible-role-raspberry-pi
 #
 # LICENSE:    MIT
 #
-# @project    vagrant-devbox
+# @project    ansible-role-raspberry-pi
 # @package    configuration
-# @author     André Lademann <vergissberlin@googlemail.com>
+# @author     André Lademann
+# @author     Tobias S.
 # @license    http://opensource.org/licenses/MIT
 
 
