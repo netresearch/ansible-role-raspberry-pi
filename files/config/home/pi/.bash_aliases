@@ -1,10 +1,11 @@
-# vagrant-devbox
+# ansible-role-raspberry-pi
 #
 # LICENSE:    MIT
 #
-# @project    vagrant-devbox
+# @project    ansible-role-raspberry-pi
 # @package    installation
-# @author     André Lademann <vergissberlin@googlemail.com>
+# @author     André Lademann
+# @author     Tobias S.
 # @license    http://opensource.org/licenses/MIT
 
 # some more ls aliases
@@ -22,13 +23,4 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
-fi
-
-# Docker
-if [ ! -f /usr/bin/docker ]; then
-    alias doc='docker'
-fi
-
-if [ ! -f /usr/local/bin/docker-compose ]; then
-    alias dc='docker-compose'
 fi
