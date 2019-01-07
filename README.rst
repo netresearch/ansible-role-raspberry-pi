@@ -11,12 +11,11 @@ This Ansible role installs all requirements for IoT devices on a raspberry pi.
 **What does this role do?**
 
 - installs security roles
-- installs latest nodejs and npm version
 
-Requirements
-============
-- ansible 2.4
-- python
+Min. Requirements
+=================
+- Ansible 1.4
+- Python 2
 
 
 Role variables
@@ -25,9 +24,5 @@ Role variables
 =======================  ==================================  ==============================
 Name                     Default Value                       Description
 =======================  ==================================  ==============================
-`docker_compose_path`    `"/usr/local/bin/docker-compose"`   docker-compose install path
-`docker_compose_path`    `"/usr/local/bin/docker-compose"`   docker-compose install path
-`docker_compose_path`    `"/usr/local/bin/docker-compose"`   docker-compose install path
-`docker_compose_path`    `"/usr/local/bin/docker-compose"`   docker-compose install path
-`docker_compose_path`    `"/usr/local/bin/docker-compose"`   docker-compose install path
+Chromium                 on                                  Starts chromium as a web kiosk
 =======================  ==================================  ==============================
