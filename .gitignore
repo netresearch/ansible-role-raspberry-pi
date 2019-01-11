@@ -1,9 +1,8 @@
-/*
-!/defaults/
-!/files/
-!/vars/
-!/.gitignore
-!/roles/
-!/README.md
-!/default.yml
-!/playbook.yml
+!files/
+!vars/
+!meta/
+!tasks/
+!.gitignore
+!README.md
+!default.yml
+!playbook.yml
