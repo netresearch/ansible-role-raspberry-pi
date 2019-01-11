@@ -1,4 +1,4 @@
-
+---
 # Security
 - name: "Applying dev-sec/os-hardening role"
   include_role:
