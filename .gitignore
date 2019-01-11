@@ -1,10 +1,9 @@
 /*
 !/defaults/
 !/files/
-!/handlers/
-!/meta/
-!/tasks/
-!/templates/
 !/vars/
 !/.gitignore
-!/README.rst
+!/roles/
+!/README.md
+!/default.yml
+!/playbook.yml
