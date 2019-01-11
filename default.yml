@@ -1,5 +1,5 @@
 ---
 - name: Basic setup for Raspberry Pis
-  hosts: dashbutton, monitoring
+  hosts: localhost
   roles:
     - ansible-role-raspberry-pi
