@@ -1,0 +1,31 @@
+
+# Security
+- name: "Applying dev-sec/os-hardening role"
+  include_role:
+    name: roles/os-hardening
+  vars:
+    os_desktop_enable: true
+    os_auditd_enable: false
+
+
+- name: "Applying dev-sec/ssh-hardening role"
+  include_role:
+    name: roles/ssh-hardening
+  vars:
+    ssh_allow_root_with_key: true
+
+- name: "Applying NR server base role"
+  include_role:
+    name: roles/server-base
+  tags:
+    - server-base
+
+- name: "Adding authorized keys to user pi"
+  authorized_key:
+    user: pi
+    state: present
+    key: "{{ lookup('file', item) }}"
+  with_fileglob:
+    - "keys/*.pub"
+  tags:
+    - ssh_keys
