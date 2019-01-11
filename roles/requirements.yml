@@ -1,0 +1,11 @@
+- src: git+https://github.com/dev-sec/ansible-os-hardening.git
+  version: 5.1.0
+  name: os-hardening
+
+- src: git+https://github.com/dev-sec/ansible-ssh-hardening.git
+  version: 6.0.0
+  name: ssh-hardening
+
+- src: git+git@git.netresearch.de:provision/ansible-role-server-base.git
+  version: v1.3.1
+  name: server-base
