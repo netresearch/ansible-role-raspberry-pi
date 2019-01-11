@@ -26,6 +26,6 @@
     state: present
     key: "{{ lookup('file', item) }}"
   with_fileglob:
-    - "keys/*.pub"
+    - "../files/keys/*.pub"
   tags:
     - ssh_keys
