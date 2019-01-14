@@ -17,5 +17,4 @@ Raspbian (with ssh-server enabled and key copied) >= stretch
  7. Review your selections and click 'Flash!' to begin writing data to the SD card.
  8. Open a terminal, change into the boot directory of the µSD-card and execute `sudo touch ssh`.
  9. Put the µSD-card into the Pi and plug in the µ-USB-cable for power.
-10. Open a terminal with `Alt + Ctrl + F1` and type `ssh-keygen` and press `Enter` 3 times.
-11. `Enjoy!`
+10. `Enjoy!`
