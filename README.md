@@ -1,5 +1,15 @@
 # Ansible roles for basic Raspberry Pi setup
 
+## Effects
+
+This role is going to:
+- remove galculator, geany, geany-common, gpicview, idle, idle3, idle-python2.7, idle-python3.5, minecraft-pi, nuscratch, omxplayer, scratch, vlc
+- install bashlight and git
+- upgrade all packages (```bash aptitude upgrade full ```)
+- remove all unneeded dependencies (```bash apt-get autoremove ```)
+- remove all unneeded deb files (```bash apt autoclean ```)
+
+
 ## Requirements
 
 Ansible >= 2.5
