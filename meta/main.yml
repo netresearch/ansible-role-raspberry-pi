@@ -2,7 +2,7 @@
 galaxy_info:
   author: Tobias Schneehardt <tobigames200@gmail.com>
   description: This Ansible role provides a base setup for the Raspberry Pis at Netresearch.
-  company: Netresearch GmbH & Co. KG
+  company: Netresearch DTT GmbH
   license: BSD
   min_ansible_version: 2.5
   platforms:
