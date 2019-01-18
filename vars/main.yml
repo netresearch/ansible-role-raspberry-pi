@@ -1,6 +1,6 @@
 ---
 packages:
-  os:
+  pi:
     - name: 'galculator'
       state: absent
     - name: 'geany'
