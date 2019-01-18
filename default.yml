@@ -3,5 +3,4 @@
   hosts: localhost
   roles:
     - ansible-role-raspberry-pi
-  vars:
-    os_auditd_enable: false
+ 
