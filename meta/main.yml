@@ -8,7 +8,6 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-    - wheezy
     - jessie
     - stretch
     - buster
@@ -18,7 +17,7 @@ galaxy_info:
     - xenial
     - bionic
   galaxy_tags: []
-dependencies: 
+dependencies:
   - src: git+https://github.com/dev-sec/ansible-os-hardening.git
     version: 5.1.0
     name: os-hardening
