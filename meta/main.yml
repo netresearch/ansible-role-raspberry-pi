@@ -27,5 +27,5 @@ dependencies:
     name: ssh-hardening
 
   - src: git+git@git.netresearch.de:provision/ansible-role-server-base.git
-    version: v1.3.1
+    version: v1.5.1
     name: server-base
