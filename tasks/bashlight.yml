@@ -1,27 +1,20 @@
 ---
 - name: "Creating .bin directory for bashlight"
-  tags: create-bin
-  become_user: pi
   file:
-    path: /home/pi/.bin
+    path: "/home/{{ pi_user_name }}/.bin"
     state: directory
-    group: pi
-    owner: pi
-
+    group: "{{ pi_user_name }}"
+    owner: "{{ pi_user_group }}"
 
 - name: "Cloning bashlight"
-  tags: clone-bashlight
-  become_user: pi
-  git: 
-    dest: /home/pi/.bin/bashlight
+  git:
+    dest: "/home/{{ pi_user_name }}/.bin/bashlight"
     repo: https://github.com/vergissberlin/bashlight.git
 
 
 - name: "Adding bashlight to bashrc"
-  tags: install-bashlight
-  become_user: pi
   blockinfile:
-    dest: /home/pi/.bashrc
+    dest: "/home/{{ pi_user_name }}/.bashrc"
     insertafter: EOF
     block: |
       if [ -f ~/.bin/bashlight/bashlight ]; then
