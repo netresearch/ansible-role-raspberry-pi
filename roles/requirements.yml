@@ -1,5 +1,5 @@
 - src: git+https://github.com/dev-sec/ansible-os-hardening.git
-  version: 5.1.0
+  version: 5.2.1
   name: os-hardening
 
 - src: git+https://github.com/dev-sec/ansible-ssh-hardening.git
