@@ -3,7 +3,7 @@
   name: os-hardening
 
 - src: git+https://github.com/dev-sec/ansible-ssh-hardening.git
-  version: 6.2.0
+  version: 9.7.0
   name: ssh-hardening
 
 - src: git+git@git.netresearch.de:provision/ansible-role-server-base.git
